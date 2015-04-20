@@ -11,7 +11,7 @@
 // *************************
 //		Global Variables
 // *************************
-var siteName		= "www.example.com"; // URL of the site to analyse
+var siteName		= "www.example.com"; // URL of the target site
 
 var dummyData		= {
     "date": "2015-01-06",
@@ -224,7 +224,8 @@ var drawColumnChart	= function (dataTable) {
 		hAxis		: {title: null}
 	};
 
-	var chart = new google.visualization.ColumnChart(document.getElementById('columnChart'));
+	var container = document.getElementById('columnChart');
+	var chart = new google.visualization.ColumnChart(container);
 
 	chart.draw(dataTable, options);
 };
@@ -240,7 +241,8 @@ var drawLineChart	= function (dataTable) {
 		chartArea	: {left:60,bottom:0,width:'75%',height:'90%'}
 	};
 
-	var chart = new google.visualization.LineChart(document.getElementById('lineChart'));
+	var container = document.getElementById('lineChart');
+	var chart = new google.visualization.LineChart(container);
 
 	chart.draw(dataTable, options);
 };
