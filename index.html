@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="robots" content="noindex, nofollow">
+	
+	<title>Wordpress REST API & Google Analytics</title>
+	
+	<link href="css/style.css" rel="stylesheet"></link>
+</head>
+<body>
+	<header>
+		<p>Wordpress REST API & Google Analytics</p>
+		<nav>
+			<div>
+				Estadísticas generales
+			</div>
+		</nav>
+	</header>
+
+	<section>
+		<article id="loading">
+			<p>Cargando Google Charts...</p>
+		</article>
+		<article id="columnChartContainer" class="hidden">
+			<div id="columnChart"></div>
+		</article>
+		<article id="lineChartContainer" class="hidden">
+			<div id="lineChart"></div>
+		</article>
+	</section>
+	
+	<script src="//code.jquery.com/jquery-1.10.0.min.js"></script>
+	<script src="https://www.google.com/jsapi"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
