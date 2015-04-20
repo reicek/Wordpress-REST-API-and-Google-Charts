@@ -278,7 +278,7 @@ var parseData		= function(data) {
 };
 
 /**
-* Gets payments from the servlet and passes it to Google Charts
+* Gets payments from the API and passes it to Google Charts
 **/
 var getData			= function() {
 	var endpoint = "https://public-api.wordpress.com/rest/v1.1/sites/"+siteName+"/stats";
